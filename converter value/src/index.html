@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./index.mjs" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="logo" class="header-logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#" class="black-link">БАНК</a></li>
+          <li><a href="#">БИЗНЕС</a></li>
+          <li><a href="#">ИНВЕСТИЦИИ</a></li>
+          <li><a href="#">СТРАХОВАНИЕ</a></li>
+          <li><a href="#">МОБАЙЛ</a></li>
+          <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+          <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="header-sign"
+        ><button class="button-sign">ВОЙТИ</button></a
+      >
+    </header>
+    <div class="converter_container">
+      <div class="inform_text">
+        <h1 class="converter_text">Конвертер валют онлайн</h1>
+      </div>
+      <div class="container_content">
+        <div class="content first-content">
+          <div class="text-item"><p class="content-text">У меня есть</p></div>
+          <div class="radio" id="buttonFrom">
+            <input
+              class="input-radio"
+              type="radio"
+              name="first-radio"
+              id="first-radio1"
+              value="RUB"
+              checked
+            />
+            <label class="input-label" for="first-radio1">RUB</label>
+            <input
+              class="input-radio"
+              type="radio"
+              name="first-radio"
+              id="first-radio2"
+              value="USD"
+            />
+            <label class="input-label" for="first-radio2">USD</label>
+            <input
+              class="input-radio"
+              type="radio"
+              name="first-radio"
+              id="first-radio3"
+              value="EUR"
+            />
+            <label class="input-label" for="first-radio3">EUR</label>
+            <input
+              class="input-radio"
+              type="radio"
+              name="first-radio"
+              id="first-radio4"
+              value="GBP"
+            />
+            <label class="input-label" for="first-radio4">GBP</label>
+          </div>
+          <div class="converter">
+            <div class="converter-input">
+              <input class="input-text" id="firstInput" type="number" />
+            </div>
+            <div>
+              <p class="converter-text" id="firstCurrencyRate"></p>
+            </div>
+          </div>
+        </div>
+        <div class="content second-content">
+          <div class="text-item">
+            <p class="content-text">Хочу приобрести</p>
+          </div>
+          <div class="radio" id="buttonIn">
+            <input
+              class="input-radio"
+              type="radio"
+              name="second-radio"
+              id="second-radio1"
+              value="RUB"
+            />
+            <label class="input-label" for="second-radio1">RUB</label>
+            <input
+              class="input-radio"
+              type="radio"
+              name="second-radio"
+              id="second-radio2"
+              value="USD"
+              checked
+            />
+            <label class="input-label" for="second-radio2">USD</label>
+            <input
+              class="input-radio"
+              type="radio"
+              name="second-radio"
+              id="second-radio3"
+              value="EUR"
+            />
+            <label class="input-label" for="second-radio3">EUR</label>
+            <input
+              class="input-radio"
+              type="radio"
+              name="second-radio"
+              id="second-radio4"
+              value="GBP"
+            />
+            <label class="input-label" for="second-radio4">GBP</label>
+          </div>
+          <div class="converter">
+            <div class="converter-input">
+              <input class="input-text" id="secondInput" type="number" />
+            </div>
+            <div>
+              <p class="converter-text" id="secondCurrencyRate"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

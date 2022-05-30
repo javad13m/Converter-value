@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@200;400;600&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li,
+a,
+button,
+h1,
+p,
+label,
+input {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #f5f5f6;
+  max-height: 50px;
+}
+
+.header-logo {
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  color: #959ba4;
+  font-size: 11px;
+  line-height: 13px;
+  width: 500 medium;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: black;
+}
+
+.nav-links li .black-link {
+  color: black;
+}
+
+.button-sign {
+  background-color: white;
+  padding: 9px 25px;
+  border-radius: 4px;
+  border: none;
+  font-size: 11px;
+  line-height: 13px;
+  cursor: pointer;
+  width: 500 medium;
+  transition: all 0.3s ease 0s;
+}
+
+.button-sign:hover {
+  background-color: #9953f1;
+}
+
+.converter_container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: content-box;
+}
+
+.inform_text {
+  margin: 56px 0 33px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.converter_text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.container_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 300px;
+  height: 200px;
+}
+
+.content-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9f9f9f;
+}
+
+.radio {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.input-radio {
+  display: none;
+}
+
+.input-label {
+  font-size: 12px;
+  width: 25%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.input-radio:checked + .input-label {
+  background: #6b19d5;
+  color: white;
+}
+
+.input-label:not(:last-of-type) {
+  border-right: 1px solid #c6c6c6;
+}
+
+.converter {
+  height: 102px;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+}
+
+.converter-input {
+  display: flex;
+  justify-content: center;
+}
+
+.input-text {
+  height: 38px;
+  width: 90%;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  outline: none;
+  border: 0;
+}
+
+.converter-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #c6c6c6;
+  margin: 15px;
+  margin-top: 25px;
+}
+
